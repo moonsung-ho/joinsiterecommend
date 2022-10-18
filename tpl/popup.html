@@ -1,0 +1,32 @@
+<load target="default.css" />
+<load target="default.js" />
+
+
+<!--//회원가입 및 로그인유도-->
+<div id="xt_join_site_addons" style="{$addon_info->position}">
+	<div class="xt_top">
+		<span class="xt_subject">{$addon_info->p_subject}</span>
+		<div class="xt_login" cond="$addon_info->bt_login == 'Y'">
+			<a class="login" href="{getUrl('','act','dispMemberLoginForm')}" style="color:#fff;">로그인</a>
+			<span class="pipe"></span>
+		</div>
+		<!--@if($addon_info->close == 'hour')-->{@ $clse_class = 'c_hour'}<!--@else if($addon_info->close == 'reset')-->{@ $clse_class = 'c_reset'}<!--@end-->
+		<span class="xt_close {$clse_class}">닫기</span>
+	</div>
+	<div class="xt_bottom">
+		<span class="xt_content">{$addon_info->p_content}</span>
+		<!--@if($addon_info->bt_join_link)--> {@ $link = $addon_info->bt_join_link; }	<!--@else--> {@ $link = getUrl('','act','dispMemberSignUpForm'); } <!--@end-->
+		<a class="xt_join" href="{$link}"><i class="fa fa-plus" style="margin-right:5px; vertical-align:middle"></i>회원가입</a>
+	</div>
+</div>
+
+
+<style type="text/css" cond="$addon_info->colorset">
+#xt_join_site_addons .xt_top{background:{$addon_info->colorset};}
+#xt_join_site_addons .xt_bottom .xt_join{background:{$addon_info->colorset};}
+#xt_join_site_addons .xt_bottom .xt_join:hover{background:{$addon_info->colorset};}
+</style>
+
+<style type="text/css" cond="$addon_info->width">
+#xt_join_site_addons{width:{$addon_info->width}px;}
+</style>

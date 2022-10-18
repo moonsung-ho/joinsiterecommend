@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">방문자 가입권유 애드온</title>
+	<description xml:lang="ko">방문자에게 회원가입을 권유합니다.</description>
+	<version>1.0.2</version>
+	<date>2017-12-20</date>
+	<author email_address="samswnlee@naver.com" link="http://www.xecenter.com/">
+		<name xml:lang="ko">숭숭군</name>
+	</author>
+	<extra_vars>
+		<group>
+			<title xml:lang="ko">카운트설정</title>
+				<var name="ct_type" type="select">
+					<title xml:lang="ko">카운트방법</title>
+					<description xml:lang="ko">방문자의 홈페이지 카운트 방법을 선택해주세요</description>
+					<options value="page">
+					<title xml:lang="ko">페이지뷰</title></options>
+					<options value="doc">
+					<title xml:lang="ko">게시물조회수</title></options>
+				</var>
+				<var name="ct" type="text">
+					<title xml:lang="ko">권유 카운트수</title>
+					<description xml:lang="ko">설정한 카운트를 넘어서면 가입권유 팝업을 띄웁니다. 미입력시 5회 입니다.</description>
+				</var>
+		</group>
+		<group>
+			<title xml:lang="ko">팝업설정</title>
+				<var name="position" type="select">
+					<title xml:lang="ko">팝업위치</title>
+					<description xml:lang="ko">팝업의 위치를 설정해주세요</description>
+					<options value="right:0; bottom:0;">
+					<title xml:lang="ko">우하단</title></options>
+					<options value="left:0; bottom:0;">
+					<title xml:lang="ko">좌하단</title></options>
+					<options value="right:0; top:0;">
+					<title xml:lang="ko">우상단</title></options>
+					<options value="left:0; top:0;">
+					<title xml:lang="ko">좌상단</title></options>
+				</var>
+				<var name="close" type="select">
+					<title xml:lang="ko">닫기설정</title>
+					<description xml:lang="ko">닫기 클릭시 팝업설정</description>
+					<options value="hour">
+					<title xml:lang="ko">6시간동안 닫음</title></options>
+					<options value="reset">
+					<title xml:lang="ko">카운트 초기화</title></options>
+					<options value="close">
+					<title xml:lang="ko">그냥닫기</title></options>
+				</var>
+				<var name="p_subject" type="text">
+					<title xml:lang="ko">팝업제목</title>
+					<description xml:lang="ko">팝업 제목을 설정해주세요.</description>
+				</var>
+				<var name="p_content" type="textarea">
+					<title xml:lang="ko">팝업내목</title>
+					<description xml:lang="ko">팝업 내용을 설정해주세요.</description>
+				</var>
+				<var name="colorset" type="text">
+					<title xml:lang="ko">컬러셋</title>
+					<description xml:lang="ko">팝업 주요 색상코드를 설정해보세요. (기본값은 #4682b4 입니다)</description>
+				</var>
+				<var name="width" type="text">
+					<title xml:lang="ko">가로길이</title>
+					<description xml:lang="ko">팝업 가로길이를 설정해보세요. (기본값은 300 입니다)</description>
+				</var>
+		</group>	
+		<group>
+			<title xml:lang="ko">회원가입설정</title>
+				<var name="bt_join_link" type="text">
+					<title xml:lang="ko">회원가입 버튼 주소</title>
+					<description xml:lang="ko">회원가입 버튼 클릭시 설정된 주소로 이동합니다. 미입력시 기본주소로 이동</description>
+				</var>
+				<var name="bt_login" type="select">
+					<title xml:lang="ko">로그인 버튼</title>
+					<description xml:lang="ko">닫기옆 로그인 버튼을 사용합니다.</description>
+					<options value="Y">
+					<title xml:lang="ko">사용</title></options>
+					<options value="N">
+					<title xml:lang="ko">미사용</title></options>
+				</var>
+		</group>		
+	</extra_vars>
+</addon>

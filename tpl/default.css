@@ -1,0 +1,24 @@
+/* 기본 */
+#xt_join_site_addons {display:none; position:fixed; margin:15px; right:0; bottom:0; height:100px; width:300px; background:#f5f5f5; z-index:99999; border:1px solid #bbb; border-radius:3px; box-shadow:0px 0px 2px #eee;  font-family:나눔바른고딕,돋음;}
+
+/* 상단 */
+#xt_join_site_addons .xt_top{border-bottom:1px solid #ccc; min-height:15px; padding:10px; padding-left:15px; background:steelblue; color:#fff;}
+#xt_join_site_addons .xt_top .xt_subject{font-weight:bold;}
+#xt_join_site_addons .xt_top .xt_close{position:absolute; right:10px; cursor:pointer;}
+#xt_join_site_addons .xt_top .xt_close:hover{font-weight:bold;}
+#xt_join_site_addons .xt_top .xt_login{display:inline-block; position:absolute; right:42px; cursor:pointer;}
+#xt_join_site_addons .xt_top .xt_login .pipe{position:absolute; top:1px; right:-6.5px; height:10px; border-right:2px solid #f1f1f1; }
+#xt_join_site_addons .xt_top .xt_login .login:hover{font-weight:bold;}
+
+/* 하단 */
+#xt_join_site_addons .xt_bottom{padding:10px;}
+#xt_join_site_addons .xt_bottom .xt_content{line-height:150%;}
+#xt_join_site_addons .xt_bottom .xt_join{position:absolute; right:10px; top:50px; cursor:pointer; padding:8px 10px; background:steelblue; color:#fff; transition:0.4s; border-radius:3px;}
+#xt_join_site_addons .xt_bottom .xt_join:hover{background:#145c98;}
+
+
+/******** 모바일 대응 ***********/
+@media all and (max-width:450px){
+
+
+}
